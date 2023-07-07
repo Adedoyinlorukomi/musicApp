@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doyin Music</title>
+    <link rel="stylesheet" href="input.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,18 +16,18 @@
     <div class="container">
         <div class="relative">
             <img src="./images/headphone.svg" alt="" class="opacity-10 mt-[-250px] mx-auto">
-            <div class="absolute bottom-[70px]">
+            <div class="absolute bottom-[120px]">
                 <p class="text-black text-5xl font-extrabold">Hello.</p>
                 <p class="text-white text-3xl font-bold">Welcome back!</p>
             </div>
         </div>
 
-       <div class="bg-white h-[560px] pt-[40px] px-[30px] b">
+       <div class="bg-white h-[690px] pt-[40px] px-[30px]">
         <img src="./images/line.svg" alt="" class="mx-auto">
-        <p class="text-center text-3xl py-4">Enter your account</p>
+        <p class="text-center text-3xl py-4 font-bold max-[400px]:text-2xl max-[400px]:font-black">Enter your account</p>
         <form action="" class="flex flex-col gap-3 was-validated"> 
             <div class="flex flex-col">
-                <label for="email" class="text-xl">E-mail</label>
+                <label for="email" class="text-xl font-semibold">E-mail</label>
                 <div class="input-group">
                     <input type="text" name="email" required  class="form-control form-control-lg border-2 border-emerald-950" placeholder="Your Email">
                     <span class="input-group-text border-3 border-emerald-950">@example.com</span>
@@ -35,7 +36,7 @@
                 </div>
             </div>
             <div class="flex flex-col">
-                <label for="pwd" class="form-label">Password</label>
+                <label for="pwd" class="form-label font-semibold">Password</label>
                 <input type="password" placeholder="Enter your password" name="pswd" required class="form-control form-control-lg border-2 border-emerald-950">
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
@@ -44,12 +45,16 @@
                 <div class="input-group-text">
                   <input type="checkbox">
                 </div>
-                <input type="text" class="form-control" placeholder="Remember Password">
+                <input type="text" class="form-control form-control-lg" placeholder="Remember Password">
               </div>
               <button type="submit" onclick="document.write('Your input is being processed!' )" id="btn" 
-        class="btn w-[123px] bg-emerald-800">Submit</button>
+        class="btn w-[113px] h-[45px] bg-emerald-800">Submit</button>
         </form>
+        <div style="background-color: #FE522E;" class="text-2xl text-white w-[500px] py-6 max-[400px]:w-[200px] rounded-[23px] 
+        max-[400px]:py-4 max-[700px]:w-[370px] text-center mx-auto mt-9">Login</div>
+        <div class="text-center py-6">Don’t have an account? <code style="color: #FE522E;">Sign up</code></div>
     </div>
+    
     </div>
 </body>
 </html>
