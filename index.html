@@ -22,12 +22,12 @@
             </div>
         </div>
 
-       <div class="bg-white h-[690px] pt-[40px] px-[30px] max-[400px]:px-[10px]">
+       <div class="bg-white h-[650px] pt-[40px] px-[30px] max-[400px]:px-[10px]">
         <img src="./images/line.svg" alt="" class="mx-auto">
         <p class="text-center text-3xl py-4 font-bold max-[400px]:text-2xl max-[400px]:font-black">Enter your account</p>
-        <form action="" class="flex flex-col gap-3 was-validated"> 
+        <form action="" class="flex flex-col gap-3 was-validated mt-3"> 
             <div class="flex flex-col">
-                <label for="email" class="text-xl font-semibold">E-mail</label>
+                <label for="email" class=" font-semibold pl-3 form-label">E-mail</label>
                 <div class="input-group">
                     <input type="text" name="email" required  class="form-control form-control-lg border-2 border-emerald-950" placeholder="Your Email">
                     <span class="input-group-text border-3 border-emerald-950">@example.com</span>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="flex flex-col">
-                <label for="pwd" class="form-label font-semibold">Password</label>
+                <label for="pwd" class="form-label font-semibold pl-3">Password</label>
                 <input type="password" placeholder="Enter your password" name="pswd" required class="form-control form-control-lg border-2 border-emerald-950">
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
@@ -47,10 +47,8 @@
                 </div>
                 <input type="text" class="form-control form-control-lg" placeholder="Remember Password">
               </div>
-              <button type="submit" onclick="document.write('Your input is being processed!' )" id="btn" 
-        class="btn w-[113px] h-[45px] bg-emerald-800">Submit</button>
         </form>
-        <div style="background-color: #FE522E;" class="text-2xl text-white w-[500px] py-6 max-[400px]:w-[200px] rounded-[23px] 
+        <div style="background-color: #FE522E; cursor: pointer;" onclick="document.write('Your input is being processed!')" class="text-2xl text-white w-[500px] py-6 max-[400px]:w-[200px] rounded-[23px] 
         max-[400px]:py-4 max-[700px]:w-[370px] text-center mx-auto mt-9">Login</div>
         <div class="text-center py-6">Don’t have an account? <code style="color: #FE522E;">Sign up</code></div>
     </div>
